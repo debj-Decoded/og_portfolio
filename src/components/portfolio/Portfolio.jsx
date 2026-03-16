@@ -1,21 +1,24 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/img/portfolio1.jpg";
+// import IMG1 from "../../assets/img/tourBooking.png";
+import IMG1 from "../../assets/img/tours.png";
 import IMG2 from "../../assets/img/portfolio2.jpg";
-import IMG3 from "../../assets/img/portfolio3.jpg";
+// import IMG3 from "../../assets/img/portfolio3.jpg";
+import IMG3 from "../../assets/img/calorieapp.png";
 import IMG4 from "../../assets/img/portfolio4.jpg";
-import IMG5 from "../../assets/img/portfolio5.png";
-import IMG6 from "../../assets/img/portfolio6.jpg";
+import IMG5 from "../../assets/img/angularPage.png";
+// import IMG6 from "../../assets/img/portfolio6.jpg";
+import IMG6 from "../../assets/img/ecommerce.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const data = [
   {
     id: 1,
-    title: "Crypto Currency Dashboard & Finacial Visualization",
+    title: "A stunning tour booking website using React with modern UI/UX design.",
     image: IMG1,
     github: "http://github.com",
-    demo: "http://github.com",
+    demo: "https://tour-booking-sooty.vercel.app/",
   },
   {
     id: 2,
@@ -26,10 +29,10 @@ const data = [
   },
   {
     id: 3,
-    title: "Figma dashboard UI kit for data design web apps",
+    title: "AI Diet Planner Full Stack App with React Native & Expo",
     image: IMG3,
     github: "http://github.com",
-    demo: "http://github.com",
+    demo: "http://ai-cal-app-landing-page.vercel.app/",
   },
   {
     id: 4,
@@ -40,18 +43,18 @@ const data = [
   },
   {
     id: 5,
-    title: "Crypto Currency Dashboard & Finacial Visualization",
+    title: "Build Faster with Angular’s Modern Template System",
     image: IMG5,
     github: "http://github.com",
-    demo: "http://github.com",
+    demo: "https://angular-template-app.vercel.app"
+
   },
   {
     id: 6,
     title: "Orion UI kit & Finacial progress Dashboard",
     image: IMG6,
     github: "http://github.com",
-    demo: "http://github.com",
-  },
+    demo: "http://ecommerce-mern-new-7rh8.vercel.app/"}
 ];
 const Portfolio = () => {
   return (
