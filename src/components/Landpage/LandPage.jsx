@@ -3,6 +3,7 @@ import { AiFillLinkedin, AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { FaDownload, FaPaperPlane } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import space from "../../assets/img/ogprofile.jpg";
+import CV from"../../assets/img/CV.pdf"
 const LandPage = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -126,7 +127,7 @@ const LandPage = () => {
                             </motion.a>
 
                             <motion.a
-                                href="/CV.pdf"
+                                href={CV}
                                 download
                                 className="group px-8 py-4 border border-white/20 rounded-full text-white font-semibold hover:bg-white/10 transition-all flex items-center gap-2"
                                 whileHover={{ scale: 1.05 }}
