@@ -11,8 +11,8 @@ const About = () => {
   const stats = [
     { icon: FaAward, label: "Experience", value: "1+ Years", delay: "0" },
     { icon: VscFolderLibrary, label: "Projects", value: "20+ Completed", delay: "100" },
-    { icon: FaCode, label: "Technologies", value: "15+ Mastered", delay: "200" },
-    { icon: FaRocket, label: "Deployments", value: "50+ Live", delay: "300" },
+    { icon: FaCode, label: "Technologies", value: "10+ Mastered", delay: "200" },
+    { icon: FaRocket, label: "Deployments", value: "20+ Live", delay: "300" },
   ];
 
   return (

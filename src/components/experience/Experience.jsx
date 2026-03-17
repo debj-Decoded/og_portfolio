@@ -17,7 +17,7 @@ import { TbBrandReactNative } from "react-icons/tb";
 
 const Experience = () => {
   const frontendSkills = [
-    { icon: FaHtml5, name: "HTML5", level: "Advanced", color: "text-orange-500" },
+    // { icon: FaHtml5, name: "HTML5", level: "Advanced", color: "text-orange-500" },
     { icon: FaCss3Alt, name: "CSS3", level: "Advanced", color: "text-blue-500" },
     { icon: IoLogoJavascript, name: "JavaScript", level: "Advanced", color: "text-yellow-400" },
     { icon: SiTypescript, name: "TypeScript", level: "Intermediate", color: "text-blue-600" },
@@ -35,7 +35,7 @@ const Experience = () => {
     { icon: SiPostgresql, name: "PostgreSQL", level: "Basic", color: "text-blue-300" },
     { icon: FaJava, name: "Java", level: "Intermediate", color: "text-red-500" },
     { icon: IoLogoFirebase, name: "Firebase", level: "Intermediate", color: "text-yellow-500" },
-    { icon: SiDocker, name: "Docker", level: "Basic", color: "text-blue-500" },
+    // { icon: SiDocker, name: "Docker", level: "Basic", color: "text-blue-500" },
   ];
 
   const SkillCard = ({ skill, index }) => (
@@ -106,7 +106,7 @@ const Experience = () => {
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
-                <FaNodeJs className="w-6 h-6 text-white" />
+                <FaNodeJs className="w-6 h-6 text-white animate-spin-slow" />
               </div>
               <h3 className="text-2xl font-bold text-white">Backend Development</h3>
             </div>

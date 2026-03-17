@@ -10,6 +10,10 @@ import React, { useEffect, useState } from "react";
 // import Testimonials from "./components/testimonials/Testimonials";
 // import Aos from "aos";
 // import Welcome from "./components/welcome/Welcome";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+
 import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./Home";
 import Privacy from "./components/document/Privacy";
@@ -32,6 +36,20 @@ const App = () => {
           <Route path="/contact" Component={Contact} />
           
         </Routes>
+        {/* Toast container must be mounted once */}
+      <ToastContainer 
+        position="top-right" 
+        autoClose={3000} 
+        hideProgressBar={false} 
+        newestOnTop={false} 
+        closeOnClick 
+        rtl={false} 
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        theme="dark"
+      />
+
       </BrowserRouter>
     </>
   );

@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { FaGithub, FaExternalLinkAlt, FaReact, FaAngular, FaNode } from "react-icons/fa";
+import { toast } from "react-toastify";
+
 import { SiFigma, SiReactos } from "react-icons/si";
 import toursImg from "../../assets/img/tours.png";
 import calorieapp from "../../assets/img/calorieapp.png";
 import angularPage from "../../assets/img/angularPage.png";
 import ecommerce from "../../assets/img/ecommerce.png";
-import portfolio4 from "../../assets/img/portfolio4.jpg";
+// import portfolio4 from "../../assets/img/portfolio4.jpg";
+import aiResumeBuilder from "../../assets/img/aiResumeBuilder.png";
 import portfolio2 from "../../assets/img/portfolio2.jpg";
 import ME2 from "../../assets/img/Gemini_Generated_Image_818o7s818o7s818o.png";
 const Portfolio = () => {
@@ -19,7 +22,7 @@ const Portfolio = () => {
       title: "Tour Booking Platform",
       description: "A stunning tour booking website using React with modern UI/UX design and real-time availability.",
       image: toursImg,
-      github: "http://github.com",
+      github: "https://github.com/debj-Decoded/Tour_booking.git",
       demo: "https://tour-booking-sooty.vercel.app/",
       tags: ["React", "Node.js", "MongoDB"],
       icon: FaReact,
@@ -30,19 +33,19 @@ const Portfolio = () => {
       title: "Angular Template System",
       description: "Build Faster with Angular's Modern Template System and lazy loading architecture.",
       image: angularPage,
-      github: "http://github.com",
+      github: "https://github.com/debj-Decoded/angular-template-app.git",
       demo: "https://angular-template-app.vercel.app",
       tags: ["Angular", "TypeScript", "RxJS"],
       icon: FaAngular,
       color: "from-red-500 to-pink-500"
     },
-    
+
     {
       id: 3,
       title: "AI Diet Planner",
       description: "Full Stack App with React Native & Expo featuring AI-powered meal recommendations.",
       image: calorieapp,
-      github: "http://github.com",
+      github: "https://github.com/debj-Decoded/Ai-cal-app.git",
       demo: "http://ai-cal-app-landing-page.vercel.app/",
       tags: ["React Native", "AI", "Expo"],
       icon: SiReactos,
@@ -51,9 +54,9 @@ const Portfolio = () => {
     {
       id: 4,
       title: "E-Commerce Platform",
-      description: "Orion UI kit & Financial progress Dashboard with real-time analytics.",
+      description: "A full‑stack e‑commerce platform built with the MERN stack, featuring secure authentication, dynamic product management, and seamless shopping cart with real‑time order tracking",
       image: ecommerce,
-      github: "http://github.com",
+      github: "https://github.com/debj-Decoded/ecommerce-Mern-new.git",
       demo: "http://ecommerce-mern-new-7rh8.vercel.app/",
       tags: ["MERN", "Redux", "Stripe"],
       icon: FaNode,
@@ -61,27 +64,27 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: "Task Management",
-      description: "Maintaining tasks and tracking progress with real-time collaboration features.",
-      image: portfolio4,
-      github: "http://github.com",
-      demo: "http://github.com",
+      title: "AI Resume Builder",
+      description: "Crafting professional resumes with AI-powered precision and real-time customization features.",
+      image: aiResumeBuilder,
+      github: "https://github.com/debj-Decoded/Ai-resume-web-front-end.git",
+      demo: false,
       tags: ["React", "Firebase", "PWA"],
       icon: FaReact,
       color: "from-orange-500 to-red-500"
     },
     {
       id: 6,
-      title: "Figma Design System",
-      description: "Charts templates and infographic design system with 50+ customizable components.",
+      title: "Design System Under process....",
+      description: "Under Process.",
       image: portfolio2,
       github: "http://github.com",
-      demo: "http://github.com",
+      demo: false,
       tags: ["Figma", "UI/UX", "Design"],
       icon: SiFigma,
       color: "from-purple-500 to-pink-500"
     },
-    
+
   ];
 
   return (
@@ -117,7 +120,7 @@ const Portfolio = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
-                
+
                 {/* Tech Icon Badge */}
                 <div className={`absolute top-4 right-4 w-10 h-10 rounded-lg bg-gradient-to-br ${project.color} flex items-center justify-center shadow-lg`}>
                   <project.icon className="w-5 h-5 text-white" />
@@ -133,7 +136,7 @@ const Portfolio = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h3>
@@ -152,7 +155,25 @@ const Portfolio = () => {
                     <FaGithub className="w-4 h-4" />
                     Code
                   </a>
-                  <a
+                  {project.demo ? (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-medium text-white bg-gradient-to-r ${project.color} hover:shadow-lg hover:shadow-blue-500/20 transition-all`}
+                    >
+                      Demo
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() => toast.success("Deployment under process Checkout Github")}
+                      className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-medium text-white bg-gradient-to-r ${project.color} hover:shadow-lg hover:shadow-blue-500/20 transition-all`}
+                    >
+                      Demo
+                    </button>
+                  )}
+
+                  {/* <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -160,7 +181,7 @@ const Portfolio = () => {
                   >
                     <FaExternalLinkAlt className="w-4 h-4" />
                     Live Demo
-                  </a>
+                  </a> */}
                 </div>
               </div>
 
