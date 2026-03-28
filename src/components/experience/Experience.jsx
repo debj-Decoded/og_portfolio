@@ -1,7 +1,7 @@
 import React from "react";
 import { 
   FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaJava, 
-  FaGithub, FaFigma 
+  FaGithub, FaFigma ,FaShopify 
 } from "react-icons/fa";
 import { 
   IoLogoJavascript, IoLogoFirebase 
@@ -20,7 +20,8 @@ const Experience = () => {
     // { icon: FaHtml5, name: "HTML5", level: "Advanced", color: "text-orange-500" },
     { icon: FaCss3Alt, name: "CSS3", level: "Advanced", color: "text-blue-500" },
     { icon: IoLogoJavascript, name: "JavaScript", level: "Advanced", color: "text-yellow-400" },
-    { icon: SiTypescript, name: "TypeScript", level: "Intermediate", color: "text-blue-600" },
+    { icon: FaShopify , name: "Shopify", level: "Intermediate", color: "text-blue-400" },
+    // { icon: SiTypescript, name: "TypeScript", level: "Intermediate", color: "text-blue-600" },
     { icon: FaReact, name: "React", level: "Advanced", color: "text-cyan-400" },
     { icon: RiNextjsFill, name: "Next.js", level: "Intermediate", color: "text-white" },
     { icon: RiTailwindCssFill, name: "Tailwind", level: "Advanced", color: "text-cyan-300" },
