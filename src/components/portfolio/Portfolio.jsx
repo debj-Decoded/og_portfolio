@@ -24,7 +24,7 @@ const Portfolio = () => {
       image: toursImg,
       github: "https://github.com/debj-Decoded/Tour_booking.git",
       demo: "https://tour-booking-sooty.vercel.app/",
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["React", "Tailwind", "MongoDB"],
       icon: FaReact,
       color: "from-cyan-500 to-blue-500"
     },
@@ -69,7 +69,7 @@ const Portfolio = () => {
       image: aiResumeBuilder,
       github: "https://github.com/debj-Decoded/Ai-resume-web-front-end.git",
       demo: false,
-      tags: ["React", "Firebase", "PWA"],
+      tags: ["React", "Strapi", "Gemini"],
       icon: FaReact,
       color: "from-orange-500 to-red-500"
     },

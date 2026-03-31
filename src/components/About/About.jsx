@@ -37,20 +37,20 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Section with Fluid Animation */}
           <div className="relative flex justify-center" data-aos="zoom-in" data-aos-duration="1200">
-            <div className="relative w-80 h-80 md:w-96 md:h-96">
+            <div className="relative w-80 h-80 md:w-96 md:h-96  rounded-full overflow-hidden ">
               {/* Animated Blob Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full animate-morph shadow-2xl shadow-blue-500/30"></div>
-              
+
               {/* Image Container */}
               <div className="absolute inset-2 rounded-full overflow-hidden animate-morph bg-gray-900">
-                <LazyLoadImage 
-                  src={ME2} 
-                  alt="Debashish Jena" 
+                <LazyLoadImage
+                  src={ME2}
+                  alt="Debashish Jena"
                   effect="blur"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                 />
               </div>
-              
+
               {/* Floating Badges */}
               <div className="absolute -top-4 -right-4 bg-blue-500/90 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-bounce">
                 Available
@@ -85,8 +85,8 @@ const About = () => {
             </div>
 
             {/* CTA Button */}
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="group relative inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 hover:scale-105"
             >
               <span className="relative z-10">Let's Talk</span>
